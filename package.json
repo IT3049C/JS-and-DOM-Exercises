@@ -24,9 +24,9 @@
   "homepage": "https://github.com/IT3049C/JS-and-DOM-Exercises#readme",
   "dependencies": {
     "@testing-library/cypress": "^8.0.2",
-    "@testing-library/dom": "^8.11.2",
-    "cypress": "^9.3.1",
-    "jest": "^27.4.7",
+    "@testing-library/dom": "^8.13.0",
+    "cypress": "^9.7.0",
+    "jest": "^28.1.0",
     "rewire": "^6.0.0"
   }
 }
