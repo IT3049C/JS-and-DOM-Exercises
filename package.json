@@ -5,12 +5,12 @@
   "main": "index.html",
   "scripts": {
     "start": "http-server -c-1",
-    "cypress:open": "cypress open",
     "test:unit": "jest ./exercises",
     "test:unit:string": "jest ./exercises/string-exercises",
     "test:unit:array": "jest ./exercises/array-exercises",
-    "test:integration": "cypress run -q",
-    "test": "npm run test:unit && npm run test:integration"
+    "test:e2e": "npx playwright test",
+    "test": "npm run test:e2e && npm run test:unit",
+    "postinstall": "npx playwright install --with-deps"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,13 @@
   },
   "homepage": "https://github.com/IT3049C/JS-and-DOM-Exercises#readme",
   "dependencies": {
-    "@testing-library/cypress": "^8.0.2",
-    "@testing-library/dom": "^8.13.0",
-    "cypress": "^9.7.0",
+    "http-server": "^14.1.1",
     "jest": "^28.1.0",
     "rewire": "^6.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.41.0",
+    "@types/node": "^20.11.5",
+    "expect-playwright": "^0.8.0"
   }
 }
