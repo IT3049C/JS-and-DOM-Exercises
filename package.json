@@ -9,6 +9,8 @@
     "test:unit:string": "jest ./exercises/string-exercises",
     "test:unit:array": "jest ./exercises/array-exercises",
     "test:e2e": "npx playwright test",
+    "test:e2e:counter": "npx playwright test counter.spec.ts",
+    "test:e2e:password": "npx playwright test password-reveal.spec.ts",
     "test": "npm run test:e2e && npm run test:unit",
     "postinstall": "npx playwright install --with-deps"
   },
