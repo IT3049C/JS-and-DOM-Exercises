@@ -11,7 +11,7 @@
     "test:e2e": "npx playwright test",
     "test:e2e:counter": "npx playwright test counter.spec.ts",
     "test:e2e:password": "npx playwright test password-reveal.spec.ts",
-    "test": "npm run test:e2e && npm run test:unit",
+    "test": "npm run test:unit && npm run test:e2e",
     "postinstall": "npx playwright install --with-deps"
   },
   "repository": {
