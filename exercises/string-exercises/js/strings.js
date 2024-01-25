@@ -3,8 +3,8 @@ class StringFunctions {
      * @param {string} input
      * @returns {string}
      * @example
-     * capitalize('hello world') // 'Hello world'
-     * capitalize('HELLO WORLD') // 'Hello world'
+     * capitalize('hello world') // 'HELLO WORLD'
+     * capitalize('HELLO WORLD') // 'HELLO WORLD'
      */
     capitalize(input) { 
       return input; 
